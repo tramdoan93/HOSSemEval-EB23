@@ -130,7 +130,7 @@ def length_of_null_quads(list_span: list):
 def check_label(pred_i, gold):
 
     # Option 1: sentence bert - encoder transformers
-    # sbert_model = SentenceTransformer('bert-base-nli-mean-tokens')
+    sbert_model = SentenceTransformer('bert-base-nli-mean-tokens')
 
     # Option 2: statistic technique: tf-idf
     vectorizer = TfidfVectorizer()
