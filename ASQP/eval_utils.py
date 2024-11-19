@@ -139,6 +139,9 @@ def check_label(pred_i, gold):
         if pred_i == g:
             return 1
         else:
+            #if not g[1] or not pred_i[1]:
+                #continue
+
             # Option 1
             encode_gold = sbert_model.encode(g[1])
             encode_pred = sbert_model.encode(pred_i[1])
